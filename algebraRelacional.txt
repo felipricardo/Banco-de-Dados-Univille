@@ -7,4 +7,7 @@
 /*Exemplo:*/
 /* π Numero_Conta (σ saldo < 800 ∧ Nome_Agencia = 'Blumenau' (Conta))
 
-/* 3 – Selecionar todas as tuplas da relação agencia situadas nas cidades de “Blumenau” e “Joinville”. 4 – Selecionar todas as tuplas da relação agência situada na cidade de “Joinville” e valor de fundos entre 800000 e 1200000.*/
+/* 3 – Selecionar todas as tuplas da relação agencia situadas nas cidades de “Blumenau” e “Joinville”. */ 
+π Nome_Agencia, Nome_Cidade (σ Nome_Agencia, Nome_Cidade (Conta))
+
+/*4 – Selecionar todas as tuplas da relação agência situada na cidade de “Joinville” e valor de fundos entre 800000 e 1200000.*/
