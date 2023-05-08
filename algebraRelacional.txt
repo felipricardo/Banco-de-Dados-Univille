@@ -11,3 +11,14 @@
 π Nome_Agencia, Nome_Cidade (σ Nome_Agencia, Nome_Cidade (Conta))
 
 /*4 – Selecionar todas as tuplas da relação agência situada na cidade de “Joinville” e valor de fundos entre 800000 e 1200000.*/
+
+/*5 – Listar o numero da conta de todas as tuplas da relação conta cujo saldo é maior que 900.*/
+
+/*6 – Listar o número da conta e o saldo de todas as tuplas da relação conta cujo nome da agência é “Blumenau” e possua saldo menor que 800.*/
+
+/*9 – Listar o nome da agência, o número do empréstimo e o nome do cliente de todos os clientes que constam na relação devedor.*/
+
+π Nome_Agencia, Numero_emprestimo, Nome_Cliente
+σ Nome_cliente = Nome_Cliente ∧ 
+Numero_emprestimo=Numero_emprestimo
+(Devedor⟕Cliente⟕Emprestimo)
