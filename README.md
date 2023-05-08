@@ -1,6 +1,6 @@
 Exercício
 Exercício Álgebra Relacional I
-​
+
 1 – Selecionar todas as tuplas da relação conta cujo saldo é maior que 900. 
 
 2 – Selecionar todas as tuplas da relação conta cujo nome da agência é “Blumenau” possua saldo menor que 800. 
