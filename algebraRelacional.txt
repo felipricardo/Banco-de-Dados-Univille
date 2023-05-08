@@ -5,4 +5,6 @@
 
 /* Selecionar o numero da conta de todas as tuplas da relação conta cujo nome da agência é “Blumenau” possua saldo menor que 800. */
 /*Exemplo:*/
-π Numero_Conta (σ saldo < 800 ∧ Nome_Agencia = 'Blumenau' (Conta))
+/* π Numero_Conta (σ saldo < 800 ∧ Nome_Agencia = 'Blumenau' (Conta))
+
+/* 3 – Selecionar todas as tuplas da relação agencia situadas nas cidades de “Blumenau” e “Joinville”. 4 – Selecionar todas as tuplas da relação agência situada na cidade de “Joinville” e valor de fundos entre 800000 e 1200000.*/
