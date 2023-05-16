@@ -37,6 +37,9 @@ Devedor⨝Emprestimo)*/
 /* 11 – Listar o nome do cliente, o número da conta, nome da agência e o saldo da conta, de todos os clientes que fazem parte da relação depositante. */
 π(Nome_Cliente, Numero_Conta, Nome_Agencia, saldo, (Depositante ⨝ Conta))
 
+/* 12 – Listar o nome do cliente, o número da conta, o nome da agencia e o saldo da conta, de todos os clientes que fazem parte da relação depositante cuja cidade do cliente seja “Blumenau”. */
+π(Nome_Cliente, Numero_Conta, Nome_Agencia, saldo, (Depositante ⨝ σ(Cidade_cliente = 'Blumenau', Cliente) ⨝ Conta))
+
 /*13 – Listar o nome do cliente, o número da conta e o número do empréstimo de todos os clientes que constam da relação devedor e da relação depositante. */
 /* π Nome_cliente, Numero_Conta (σ Depositante.Nome_cliente = Nome_cliente
 (Depositante⨝Devedor)) */
