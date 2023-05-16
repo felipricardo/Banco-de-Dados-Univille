@@ -43,3 +43,6 @@ Devedor⨝Emprestimo)*/
 /*13 – Listar o nome do cliente, o número da conta e o número do empréstimo de todos os clientes que constam da relação devedor e da relação depositante. */
 /* π Nome_cliente, Numero_Conta (σ Depositante.Nome_cliente = Nome_cliente
 (Depositante⨝Devedor)) */
+
+/* 14 – Listar o nome, rua e cidade do cliente e numero do empréstimo de todos os clientes que constam da relação devedor e que moram na “Felipe Schmidt”. */
+π(Nome_cliente, Rua_cliente, Cidade_cliente, Numero_emprestimo, (Devedor ⨝ σ(Rua_cliente = 'Felipe Schmidt', Cliente)))
