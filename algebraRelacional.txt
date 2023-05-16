@@ -1,6 +1,6 @@
-/*1 – Selecionar todas as tuplas da relação conta cujo saldo é maior que 900. */
+/* 1 – Selecionar todas as tuplas da relação conta cujo saldo é maior que 900. */
 /* σ saldo > 900 (Conta)
-/*2 – Selecionar todas as tuplas da relação conta cujo nome da agência é “Blumenau” possua saldo menor que 800. */
+/* 2 – Selecionar todas as tuplas da relação conta cujo nome da agência é “Blumenau” possua saldo menor que 800. */
 /* σ saldo < 800 ∧ Nome_Agencia = 'Blumenau' (Conta)
 
 /* Selecionar o numero da conta de todas as tuplas da relação conta cujo nome da agência é “Blumenau” possua saldo menor que 800. */
@@ -10,13 +10,13 @@
 /* 3 – Selecionar todas as tuplas da relação agencia situadas nas cidades de “Blumenau” e “Joinville”. */ 
 σ Cidade_Agencia='Blumenau' ∨ Cidade_Agencia='Joinville' (Agencia)
 
-/*4 – Selecionar todas as tuplas da relação agência situada na cidade de “Joinville” e valor de fundos entre 800000 e 1200000.*/
+/* 4 – Selecionar todas as tuplas da relação agência situada na cidade de “Joinville” e valor de fundos entre 800000 e 1200000. */
 σ(Cidade_Agencia = 'Joinville' ∧ fundos >= 800000 ∧ fundos <= 1200000, Agencia)
 
-/*5 – Listar o numero da conta de todas as tuplas da relação conta cujo saldo é maior que 900.*/
+/* 5 – Listar o numero da conta de todas as tuplas da relação conta cujo saldo é maior que 900. */
 π(Numero_Conta, σ(saldo > 900, Conta))
 
-/*6 – Listar o número da conta e o saldo de todas as tuplas da relação conta cujo nome da agência é “Blumenau” e possua saldo menor que 800.*/
+/* 6 – Listar o número da conta e o saldo de todas as tuplas da relação conta cujo nome da agência é “Blumenau” e possua saldo menor que 800. */
 /* π Numero_Conta, saldo (σ Nome_Agencia = 'Blumenau' ∧ 
 saldo < 800 Conta) */
 
@@ -26,7 +26,7 @@ saldo < 800 Conta) */
 /* 8 – Listar o nome da agencia e o valor dos fundos de todas as tuplas da relação agencia situada na cidade de “Joinville” e valor de fundos entre 800000 e 1200000. */
 π(Nome_Agencia, fundos, σ(Cidade_Agencia = 'Joinville' ∧ fundos >= 800000 ∧ fundos <= 1200000, Agencia))
 
-/*9 – Listar o nome da agência, o número do empréstimo e o nome do cliente de todos os clientes que constam na relação devedor.*/
+/* 9 – Listar o nome da agência, o número do empréstimo e o nome do cliente de todos os clientes que constam na relação devedor. */
 /*π Nome_Agencia, Numero_emprestimo, Nome_cliente
 (σ Numero_emprestimo = Numero_emprestimo
 Devedor⨝Emprestimo)*/
@@ -40,7 +40,7 @@ Devedor⨝Emprestimo)*/
 /* 12 – Listar o nome do cliente, o número da conta, o nome da agencia e o saldo da conta, de todos os clientes que fazem parte da relação depositante cuja cidade do cliente seja “Blumenau”. */
 π(Nome_Cliente, Numero_Conta, Nome_Agencia, saldo, (Depositante ⨝ σ(Cidade_cliente = 'Blumenau', Cliente) ⨝ Conta))
 
-/*13 – Listar o nome do cliente, o número da conta e o número do empréstimo de todos os clientes que constam da relação devedor e da relação depositante. */
+/* 13 – Listar o nome do cliente, o número da conta e o número do empréstimo de todos os clientes que constam da relação devedor e da relação depositante. */
 /* π Nome_cliente, Numero_Conta (σ Depositante.Nome_cliente = Nome_cliente
 (Depositante⨝Devedor)) */
 
