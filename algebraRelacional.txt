@@ -46,3 +46,6 @@ Devedor⨝Emprestimo)*/
 
 /* 14 – Listar o nome, rua e cidade do cliente e numero do empréstimo de todos os clientes que constam da relação devedor e que moram na “Felipe Schmidt”. */
 π(Nome_cliente, Rua_cliente, Cidade_cliente, Numero_emprestimo, (Devedor ⨝ σ(Rua_cliente = 'Felipe Schmidt', Cliente)))
+
+/* 15 – Listar o nome da agência, o número da conta e o saldo de todas as contas mantidas em agencias com fundos maiores que 50000 */
+π(Nome_Agencia, Numero_Conta, saldo, (Conta ⨝ σ(fundos > 50000, Agencia)))
